@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaarvi | Everyday Goods</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation: Flexbox -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Kaarvi</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#deals">Deals</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">Search</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / banner -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Well-made things for everyday life</h1>
+        <p>Thoughtfully sourced kitchen, home, and wardrobe essentials, delivered in two days.</p>
+        <a href="#shop" class="cta-btn">Start shopping</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="badge">Free shipping over $40</div>
+      </div>
+    </section>
+
+    <!-- Categories: Grid -->
+    <section class="section" id="categories">
+      <h2 class="section-title">Shop by category</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card c1"><span>Kitchen</span></a>
+        <a href="#" class="category-card c2"><span>Home</span></a>
+        <a href="#" class="category-card c3"><span>Wardrobe</span></a>
+        <a href="#" class="category-card c4"><span>Outdoor</span></a>
+      </div>
+    </section>
+
+    <!-- Product section: Grid -->
+    <section class="section" id="shop">
+      <div class="section-head">
+        <h2 class="section-title">New arrivals</h2>
+        <a href="#" class="text-link">View all</a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-img p1"></div>
+          <div class="product-info">
+            <h3>Ceramic Pour-Over Set</h3>
+            <p class="price">$34.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img p2"></div>
+          <div class="product-info">
+            <h3>Linen Everyday Shirt</h3>
+            <p class="price">$58.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img p3"></div>
+          <div class="product-info">
+            <h3>Walnut Cutting Board</h3>
+            <p class="price">$42.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img p4"></div>
+          <div class="product-info">
+            <h3>Insulated Water Bottle</h3>
+            <p class="price">$24.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img p5"></div>
+          <div class="product-info">
+            <h3>Canvas Tote Bag</h3>
+            <p class="price">$19.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img p6"></div>
+          <div class="product-info">
+            <h3>Wool Throw Blanket</h3>
+            <p class="price">$76.00</p>
+            <button class="add-btn">Add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Promo strip -->
+    <section class="promo" id="deals">
+      <h2>Summer clearance: up to 30% off</h2>
+      <a href="#" class="cta-btn light">Shop deals</a>
+    </section>
+  </main>
+
+  <footer class="footer" id="about">
+    <p>&copy; 2026 Kaarvi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
